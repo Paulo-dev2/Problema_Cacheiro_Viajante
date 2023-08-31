@@ -1,5 +1,5 @@
 from Rank import *
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 
 def createRoute(cityList):
     route = random.sample(cityList, len(cityList))

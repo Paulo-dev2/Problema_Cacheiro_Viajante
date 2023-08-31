@@ -4,7 +4,7 @@ import numpy as np, random, operator, pandas as pd
 
 def rankRoutes(population):
     fitnessResults = {}
-    for i in range(0,len(population)):
+    for i in range(0,len(population)): 
         fitnessResults[i] = Fitness(population[i]).routeFitness()
     return sorted(fitnessResults.items(), key = operator.itemgetter(1), reverse = True)
 

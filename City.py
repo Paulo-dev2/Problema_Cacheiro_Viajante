@@ -1,7 +1,7 @@
 class City:
     def __init__(self, x, y):
         self.x = x
-        self.y = y
+        self.y = y 
     
     # Calcula a distância euclidiana
     def distance(self, toCity):
