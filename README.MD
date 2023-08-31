@@ -33,3 +33,5 @@ Repetição do ciclo por x gerações
 Neste modelo foi acrescentado um fator de elitismo para a procriação e escolha do melhor indivíduo. Este fator faz com que indivíduos com melhor desempenho sejam tranferidos para as próximas gerações.
 
 Eu separaei as fases do algoritimo em arquivos com suas seguintes fases.
+
+Ultilizamos este código e a explicação do código: https://www.youtube.com/watch?v=M0LIXBc61W4&t=4s, para entendermos melhor.
