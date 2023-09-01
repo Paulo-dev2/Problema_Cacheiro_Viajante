@@ -1,5 +1,6 @@
 from Rank import *
 import matplotlib.pyplot as plt 
+from progress import printProgressBar
 
 def createRoute(cityList):
     route = random.sample(cityList, len(cityList))
@@ -32,8 +33,9 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
     bestRoute = pop[bestRouteIndex]
     return bestRoute
 
-def geneticAlgorithmPlot(population, popSize, eliteSize, mutationRate, generations):
-    pop = initialPopulation(popSize, population)    
+def geneticAlgorithmPlot(population: list, popSize, eliteSize, mutationRate, generations):
+    pop = initialPopulation(popSize, population)  
+    print('cls')  
     print("Distância Inicial: " + str(1 / rankRoutes(pop)[0][1]))
     progress = []
     progress.append(1 / rankRoutes(pop)[0][1])
@@ -41,6 +43,7 @@ def geneticAlgorithmPlot(population, popSize, eliteSize, mutationRate, generatio
     for i in range(0, generations):
         pop = nextGeneration(pop, eliteSize, mutationRate)
         progress.append(1 / rankRoutes(pop)[0][1])
+        printProgressBar(i, generations)
     
     print("Distância Final: " + str(1 / rankRoutes(pop)[0][1]))
     bestRouteIndex = rankRoutes(pop)[0][0]
