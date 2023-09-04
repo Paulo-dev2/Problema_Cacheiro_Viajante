@@ -34,4 +34,4 @@ Neste modelo foi acrescentado um fator de elitismo para a procriação e escolha
 
 Eu separaei as fases do algoritimo em arquivos com suas seguintes fases.
 
-Ultilizamos este código e a explicação do código: https://www.youtube.com/watch?v=M0LIXBc61W4&t=4s, para entendermos melhor.
+Ultilizamos este vídeo: https://www.youtube.com/watch?v=M0LIXBc61W4&t=4s, para entendermos melhor.
